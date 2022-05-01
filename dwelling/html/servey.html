@@ -1,12 +1,577 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- 页面格式参考自https://www.jotform.com/form-templates/survey/employee-surveys模板 -->
+
+<html style="overflow: hidden; scroll-behavior: smooth;" class="supernova isEmbeded">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        body,
+        html {
+            touch-action: auto
+        }
+
+        .jfCardForm .jfProgress {
+            bottom: 20px !important;
+        }
+
+        .jfCardForm .jfForm-backgroundOverlay,
+        .jfCardForm .jfForm-backgroundUnderlay {
+            height: 100%;
+        }
+    </style>
+    <meta name="robots" content="noindex,follow">
+    <link rel="alternate" type="application/json+oembed"
+        href="https://www.jotform.com/oembed/?format=json&amp;url=https%3A%2F%2Fform.jotform.com%2F200831608878058"
+        title="oEmbed Form">
+    <link rel="alternate" type="text/xml+oembed"
+        href="https://www.jotform.com/oembed/?format=xml&amp;url=https%3A%2F%2Fform.jotform.com%2F200831608878058"
+        title="oEmbed Form">
+    <link rel="shortcut icon" href="https://cdn.jotfor.ms/assets/img/favicons/favicon-2021.svg">
+    <link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/form.css?v3&amp;v=3.3.33035">
+    <link href="https://cdn02.jotfor.ms/css/calendarview.css?v3&amp;v=3.3.33035" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/nova.css?3&amp;v=3.3.33035">
+    <style type="text/css">
+        @media print {
+            .form-section {
+                display: inline !important
+            }
+
+            .form-pagebreak {
+                display: none !important
+            }
+
+            .form-section-closed {
+                height: auto !important
+            }
+
+            .page-section {
+                position: initial !important
+            }
+        }
+    </style>
+    <link type="text/css" rel="stylesheet"
+        href="https://cdn01.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?&amp;v=3.3.33035">
+    <link type="text/css" rel="stylesheet"
+        href="https://cdn02.jotfor.ms/css/styles/payment/payment_feature.css?3&amp;v=3.3.33035">
+    <style type="text/css">
+        .form-label-left {
+            width: 150px;
+        }
+
+        .form-line {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        .form-label-right {
+            width: 150px;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            background: #e6fcfc;
+        }
+
+        .form-all {
+            margin: 0px auto;
+            padding-top: 0px;
+            width: 690px;
+            color: #555 !important;
+            font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+    <style type="text/css" id="form-designer-style">
+        /* Injected CSS Code */
+        .form-label.form-label-auto {
+            display: block;
+            float: none;
+            text-align: left;
+            width: inherit;
+        }
+
+        /*PREFERENCES STYLE*/
+        .form-all {
+            font-family: Lucida Grande, sans-serif;
+        }
+
+        .form-all .qq-upload-button,
+        .form-all .form-submit-button,
+        .form-all .form-submit-reset,
+        .form-all .form-submit-print {
+            font-family: Lucida Grande, sans-serif;
+        }
+
+        .form-all .form-pagebreak-back-container,
+        .form-all .form-pagebreak-next-container {
+            font-family: Lucida Grande, sans-serif;
+        }
+
+        .form-header-group {
+            font-family: Lucida Grande, sans-serif;
+        }
+
+        .form-label {
+            font-family: Lucida Grande, sans-serif;
+        }
+
+        .form-label.form-label-auto {
+            display: block;
+            float: none;
+            text-align: left;
+            width: 100%;
+        }
+
+        .form-line {
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        .form-all {
+            width: 690px;
+        }
+
+        .form-label.form-label-left,
+        .form-label.form-label-right,
+        .form-label.form-label-left.form-label-auto,
+        .form-label.form-label-right.form-label-auto {
+            width: 150px;
+        }
+
+        .form-all {
+            font-size: 20px
+        }
+
+        .form-all .qq-upload-button,
+        .form-all .qq-upload-button,
+        .form-all .form-submit-button,
+        .form-all .form-submit-reset,
+        .form-all .form-submit-print {
+            font-size: 20px
+        }
+
+        .form-all .form-pagebreak-back-container,
+        .form-all .form-pagebreak-next-container {
+            font-size: 20px
+        }
+
+        .supernova .form-all,
+        .form-all {
+            background-color: #e6fcfc;
+            border: 1px solid transparent;
+        }
+
+        .form-all {
+            color: #555;
+        }
+
+        .form-header-group .form-header {
+            color: #555;
+        }
+
+        .form-header-group .form-subHeader {
+            color: #555;
+        }
+
+        .form-label-top,
+        .form-label-left,
+        .form-label-right,
+        .form-html,
+        .form-checkbox-item label,
+        .form-radio-item label {
+            color: #555;
+        }
+
+        .form-sub-label {
+            color: #6f6f6f;
+        }
+
+        .supernova {
+            background-color: #3C9394;
+        }
+
+        .supernova body {
+            background: transparent;
+        }
+
+        .form-textbox,
+        .form-textarea,
+        .form-radio-other-input,
+        .form-checkbox-other-input,
+        .form-captcha input,
+        .form-spinner input {
+            background-color: #fff;
+        }
+
+        .supernova {
+            background-image: none;
+        }
+
+        #stage {
+            background-image: none;
+        }
+
+        .form-all {
+            background-image: none;
+        }
+
+        .ie-8 .form-all:before {
+            display: none;
+        }
+
+        .ie-8 {
+            margin-top: auto;
+            margin-top: initial;
+        }
+
+        /*PREFERENCES STYLE*/
+        /*__INSPECT_SEPERATOR__*/
+        .form-matrix-row-headers {
+            background: #3c9394;
+            color: white;
+        }
+
+        .form-matrix-column-headers {
+            background: #3c9394;
+            color: white;
+        }
+
+        .form-matrix-values {
+            background: white !important;
+        }
+
+        .form-matrix-row-headers {
+            text-align:center;
+            width: 150px;
+        }
+
+        .form-matrix-values {
+            width: 70px;
+        }
+
+        .form-matrix-table th {
+            font-size: 15px;
+        }
+
+        .form-textbox {
+            height: 50px !important;
+        }
+
+        .form-submit-button {
+            background: #344040;
+            color: white;
+            font: bold 16px arial, sans-serif;
+            text-shadow: none;
+        }
+
+        /* Injected CSS Code */
+    </style>
+    <style>
+        html {
+            -webkit-overflow-scrolling: touch;
+            overflow: scroll;
+        }
+
+        body {
+            height: 100%;
+            overflow: scroll;
+        }
+    </style>
 </head>
-<body>
-    Hello World!
+
+<body style="overflow: auto;">
+    <form class="jotform-form" method="post" name="form_200831608878058" id="200831608878058" accept-charset="utf-8"
+        autocomplete="on" novalidate="true">
+        <div role="main" class="form-all" style="margin:0 auto;">
+            <ul class="form-section page-section">
+                <li id="cid_1" class="form-input-wide" data-type="control_head">
+                    <div class="form-header-group header-default">
+                        <div class="header-text httac htvam">
+                            <h2 id="header_1" class="form-header" data-component="header">杨浦区智能房源推荐
+                            </h2>
+                        </div>
+                    </div>
+                </li>
+                <li class="form-line" data-type="control_radio" id="id_1">
+                    <label class="form-label form-label-top form-label-auto" id="label_1" for="input_1"> 1. 您想找的房源类型为？ </label>
+                    <div id="cid_1" class="form-input-wide">
+                        <div class="form-single-column" role="group" aria-labelledby="label_1" data-component="radio">
+                            <span class="form-radio-item" style="clear:left">
+                                <input type="radio" aria-describedby="label_1" class="form-radio" id="input_1_0" value="0" name="房源类型" checked="True">
+                                <label id="label_input_1_0" for="input_1_0"> 家用住宅 </label>
+                            </span>
+                            <span class="form-radio-item" style="clear:left">
+                                <input type="radio" aria-describedby="label_1" class="form-radio" id="input_1_1" value="1" name="房源类型">
+                                <label id="label_input_1_1" for="input_1_1"> 宾馆酒店 </label>
+                            </span>
+                            <span class="form-radio-item" style="clear:left">
+                                <input type="radio" aria-describedby="label_1" class="form-radio" id="input_1_2" value="2" name="房源类型">
+                                <label id="label_input_1_2" for="input_1_2"> 商务办公 </label>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="form-line" data-type="control_matrix" id="id_2">
+                    <label class="form-label form-label-top form-label-auto" id="label_2" for="input_2"> 2. 您对房源周边场所的要求为？</label>
+                    <div id="cid_2" class="form-input-wide">
+                        <table summary="" aria-labelledby="label_2" cellpadding="4" cellspacing="0"
+                            class="form-matrix-table" data-component="matrix">
+                            <tbody>
+                                <tr class="form-matrix-tr form-matrix-header-tr">
+                                    <th class="form-matrix-headers form-matrix-column-headers"></th>
+                                    <th scope="col"
+                                        class="form-matrix-headers form-matrix-column-headers form-matrix-column_0">
+                                        <label id="label_2_col_0"> 很同意 </label>
+                                    </th>
+                                    <th scope="col"
+                                        class="form-matrix-headers form-matrix-column-headers form-matrix-column_1">
+                                        <label id="label_2_col_1"> 同意 </label>
+                                    </th>
+                                    <th scope="col"
+                                        class="form-matrix-headers form-matrix-column-headers form-matrix-column_2">
+                                        <label id="label_2_col_2"> 无所谓 </label>
+                                    </th>
+                                    <th scope="col"
+                                        class="form-matrix-headers form-matrix-column-headers form-matrix-column_3">
+                                        <label id="label_2_col_3"> 不同意 </label>
+                                    </th>
+                                    <th scope="col"
+                                        class="form-matrix-headers form-matrix-column-headers form-matrix-column_4">
+                                        <label id="label_2_col_4"> 很不同意 </label>
+                                    </th>
+                                </tr>
+                                <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_2 label_2_row_0">
+                                    <th scope="row" class="form-matrix-headers form-matrix-row-headers"><label
+                                            id="label_2_row_0"> 交通出行方便 </label></th>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_0_0"
+                                            class="form-radio" value="5" name="交通出行方便"
+                                            aria-labelledby="label_2_col_0 label_2_row_0"><label for="input_2_0_0"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_0_1"
+                                            class="form-radio" value="4" name="交通出行方便"
+                                            aria-labelledby="label_2_col_1 label_2_row_0"><label for="input_2_0_1"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_0_2"
+                                            class="form-radio" value="3" checked="True" name="交通出行方便"
+                                            aria-labelledby="label_2_col_2 label_2_row_0"><label for="input_2_0_2"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_0_3"
+                                            class="form-radio" value="2" name="交通出行方便"
+                                            aria-labelledby="label_2_col_3 label_2_row_0"><label for="input_2_0_3"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_0_4"
+                                            class="form-radio" value="1" name="交通出行方便"
+                                            aria-labelledby="label_2_col_4 label_2_row_0"><label for="input_2_0_4"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                </tr>
+                                <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_2 label_2_row_1">
+                                    <th scope="row" class="form-matrix-headers form-matrix-row-headers"><label
+                                            id="label_2_row_1"> 娱乐活动丰富 </label></th>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_1_0"
+                                            class="form-radio" value="5" name="娱乐活动丰富"
+                                            aria-labelledby="label_2_col_0 label_2_row_1"><label for="input_2_1_0"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_1_1"
+                                            class="form-radio" value="4" name="娱乐活动丰富"
+                                            aria-labelledby="label_2_col_1 label_2_row_1"><label for="input_2_1_1"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_1_2"
+                                            class="form-radio" value="3" checked="True" name="娱乐活动丰富"
+                                            aria-labelledby="label_2_col_2 label_2_row_1"><label for="input_2_1_2"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_1_3"
+                                            class="form-radio" value="2" name="娱乐活动丰富"
+                                            aria-labelledby="label_2_col_3 label_2_row_1"><label for="input_2_1_3"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_1_4"
+                                            class="form-radio" value="1" name="娱乐活动丰富"
+                                            aria-labelledby="label_2_col_4 label_2_row_1"><label for="input_2_1_4"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                </tr>
+                                <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_2 label_2_row_2">
+                                    <th scope="row" class="form-matrix-headers form-matrix-row-headers"><label
+                                            id="label_2_row_2"> 购物选择多样 </label></th>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_2_0"
+                                            class="form-radio" value="5" name="购物选择多样"
+                                            aria-labelledby="label_2_col_0 label_2_row_2"><label for="input_2_2_0"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_2_1"
+                                            class="form-radio" value="4" name="购物选择多样"
+                                            aria-labelledby="label_2_col_1 label_2_row_2"><label for="input_2_2_1"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_2_2"
+                                            class="form-radio" value="3" checked="True" name="购物选择多样"
+                                            aria-labelledby="label_2_col_2 label_2_row_2"><label for="input_2_2_2"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_2_3"
+                                            class="form-radio" value="2" name="购物选择多样"
+                                            aria-labelledby="label_2_col_3 label_2_row_2"><label for="input_2_2_3"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_2_4"
+                                            class="form-radio" value="1" name="购物选择多样"
+                                            aria-labelledby="label_2_col_4 label_2_row_2"><label for="input_2_2_4"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                </tr>
+                                <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_2 label_2_row_3">
+                                    <th scope="row" class="form-matrix-headers form-matrix-row-headers"><label
+                                            id="label_2_row_3"> 就医便捷快速 </label></th>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_3_0"
+                                            class="form-radio" value="5" name="就医便捷快速"
+                                            aria-labelledby="label_2_col_0 label_2_row_3"><label for="input_2_3_0"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_3_1"
+                                            class="form-radio" value="4" name="就医便捷快速"
+                                            aria-labelledby="label_2_col_1 label_2_row_3"><label for="input_2_3_1"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_3_2"
+                                            class="form-radio" value="3" checked="True" name="就医便捷快速"
+                                            aria-labelledby="label_2_col_2 label_2_row_3"><label for="input_2_3_2"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_3_3"
+                                            class="form-radio" value="2" name="就医便捷快速"
+                                            aria-labelledby="label_2_col_3 label_2_row_3"><label for="input_2_3_3"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_3_4"
+                                            class="form-radio" value="1" name="就医便捷快速"
+                                            aria-labelledby="label_2_col_4 label_2_row_3"><label for="input_2_3_4"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                </tr>
+                                <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_2 label_2_row_4">
+                                    <th scope="row" class="form-matrix-headers form-matrix-row-headers"><label
+                                            id="label_2_row_4"> 运动设施完备 </label></th>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_4_0"
+                                            class="form-radio" value="5" name="运动设施完备"
+                                            aria-labelledby="label_2_col_0 label_2_row_4"><label for="input_2_4_0"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_4_1"
+                                            class="form-radio" value="4" name="运动设施完备"
+                                            aria-labelledby="label_2_col_1 label_2_row_4"><label for="input_2_4_1"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_4_2"
+                                            class="form-radio" value="3" checked="True" name="运动设施完备"
+                                            aria-labelledby="label_2_col_2 label_2_row_4"><label for="input_2_4_2"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_4_3"
+                                            class="form-radio" value="2" name="运动设施完备"
+                                            aria-labelledby="label_2_col_3 label_2_row_4"><label for="input_2_4_3"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_4_4"
+                                            class="form-radio" value="1" name="运动设施完备"
+                                            aria-labelledby="label_2_col_4 label_2_row_4"><label for="input_2_4_4"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                </tr>
+                                <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_2 label_2_row_5">
+                                    <th scope="row" class="form-matrix-headers form-matrix-row-headers"><label
+                                            id="label_2_row_5"> 科教氛围浓厚 </label></th>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_5_0"
+                                            class="form-radio" value="5" name="科教氛围浓厚"
+                                            aria-labelledby="label_2_col_0 label_2_row_5"><label for="input_2_5_0"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_5_1"
+                                            class="form-radio" value="4" name="科教氛围浓厚"
+                                            aria-labelledby="label_2_col_1 label_2_row_5"><label for="input_2_5_1"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_5_2"
+                                            class="form-radio" value="3" checked="True" name="科教氛围浓厚"
+                                            aria-labelledby="label_2_col_2 label_2_row_5"><label for="input_2_5_2"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_5_3"
+                                            class="form-radio" value="2" name="科教氛围浓厚"
+                                            aria-labelledby="label_2_col_3 label_2_row_5"><label for="input_2_5_3"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_5_4"
+                                            class="form-radio" value="1" name="科教氛围浓厚"
+                                            aria-labelledby="label_2_col_4 label_2_row_5"><label for="input_2_5_4"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                </tr>
+                                <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_2 label_2_row_6">
+                                    <th scope="row" class="form-matrix-headers form-matrix-row-headers"><label
+                                            id="label_2_row_6"> 美食饕餮狂欢 </label></th>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_6_0"
+                                            class="form-radio" value="5" name="美食饕餮狂欢"
+                                            aria-labelledby="label_2_col_0 label_2_row_6"><label for="input_2_6_0"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_6_1"
+                                            class="form-radio" value="4" name="美食饕餮狂欢"
+                                            aria-labelledby="label_2_col_1 label_2_row_6"><label for="input_2_6_1"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_6_2"
+                                            class="form-radio" value="3" checked="True" name="美食饕餮狂欢"
+                                            aria-labelledby="label_2_col_2 label_2_row_6"><label for="input_2_6_2"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_6_3"
+                                            class="form-radio" value="2" name="美食饕餮狂欢"
+                                            aria-labelledby="label_2_col_3 label_2_row_6"><label for="input_2_6_3"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_6_4"
+                                            class="form-radio" value="1" name="美食饕餮狂欢"
+                                            aria-labelledby="label_2_col_4 label_2_row_6"><label for="input_2_6_4"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                </tr>
+                                <tr class="form-matrix-tr form-matrix-value-tr" aria-labelledby="label_2 label_2_row_7">
+                                    <th scope="row" class="form-matrix-headers form-matrix-row-headers"><label
+                                            id="label_2_row_7"> 旅游拍照打卡 </label></th>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_7_0"
+                                            class="form-radio" value="5" name="旅游拍照打卡"
+                                            aria-labelledby="label_2_col_0 label_2_row_7"><label for="input_2_7_0"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_7_1"
+                                            class="form-radio" value="4" name="旅游拍照打卡"
+                                            aria-labelledby="label_2_col_1 label_2_row_7"><label for="input_2_7_1"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_7_2"
+                                            class="form-radio" value="3" checked="True" name="旅游拍照打卡"
+                                            aria-labelledby="label_2_col_2 label_2_row_7"><label for="input_2_7_2"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_7_3"
+                                            class="form-radio" value="2" name="旅游拍照打卡"
+                                            aria-labelledby="label_2_col_3 label_2_row_7"><label for="input_2_7_3"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                    <td class="form-matrix-values"><input type="radio" id="input_2_7_4"
+                                            class="form-radio" value="1" name="旅游拍照打卡"
+                                            aria-labelledby="label_2_col_4 label_2_row_7"><label for="input_2_7_4"
+                                            class="matrix-choice-label matrix-radio-label"> </label></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li class="form-line" data-type="control_radio" id="id_3">
+                    <label class="form-label form-label-top form-label-auto" id="label_3" for="input_3"> 3. 您的预算情况？ </label>
+                    <div id="cid_3" class="form-input-wide">
+                        <div class="form-single-column" role="group" aria-labelledby="label_3" data-component="radio">
+                            <span class="form-radio-item" style="clear:left">
+                                <input type="radio" aria-describedby="label_3" class="form-radio" id="input_3_0" value="0" name="预算">
+                                <label id="label_input_3_0" for="input_3_0"> 预算充分，尽管推荐！ </label>
+                            </span>
+                            <span class="form-radio-item" style="clear:left">
+                                <input type="radio" aria-describedby="label_3" class="form-radio" id="input_3_1" value="1" name="预算" checked="True">
+                                <label id="label_input_3_1" for="input_3_1"> 预算一般，推荐合适的！ </label>
+                            </span>
+                            <span class="form-radio-item" style="clear:left">
+                                <input type="radio" aria-describedby="label_3" class="form-radio" id="input_3_2" value="2" name="预算">
+                                <label id="label_input_3_2" for="input_3_2"> 预算不多，推荐便宜的！ </label>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="form-line" data-type="control_button" id="id_4">
+                    <div id="cid_4" class="form-input-wide">
+                        <div style="text-align:center" data-align="center"
+                            class="form-buttons-wrapper form-buttons-center jsTest-button-wrapperField"><button
+                                id="input_4" type="submit"
+                                class="form-submit-button submit-button jf-form-buttons jsTest-submitField"
+                                data-component="button" data-content="">Submit</button></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </form>
 </body>
+
 </html>
