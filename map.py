@@ -66,5 +66,6 @@ def gen_category(filename):
             json.dump(category_dict, f, indent=4, ensure_ascii=False)
     return category_dict
 
-gen_category("category.json")
 
+if __name__ == "__main__":
+    map = draw_map()
